@@ -2,4 +2,5 @@
 
 When first looking at the description, the first word that pops out is code. 
 I decide to then look at the source code of the Juice Shop site through the inspect tool in the browser settings (this can be done with any type of browser). 
-Clicking on the inspect tool, I see this: 
+Clicking on the inspect tool, I was sent to a screen showing html code under a window titled "Elements". 
+I clicked on the "Sources" window and clicked on the main.js file under the access/public/images folder. 
