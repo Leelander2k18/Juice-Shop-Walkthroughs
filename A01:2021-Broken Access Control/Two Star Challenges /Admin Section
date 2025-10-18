@@ -1,1 +1,7 @@
+* Challenge Description: Access the administration section of the store *
+
+
+For any CTF web challenge, the first thing I like to do is look at the source code through the "inspect" tool.
+I then look at the source code and use "CTRL+F" to look for the word "admin". I then come across this.  path: "administration"
+I input the word "administration" after the /#/ symbol in the URL and hit enter to get a 403 error saying "You are not allowed to access this page" (sigh)
 
