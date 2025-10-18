@@ -1,1 +1,7 @@
+* Challenge Description: Log in with the administrator's user account * 
+
+I'm looking at the challenge description and at the OWASP vulnerability category which gets me thinking....injection....Administration account access....I need to "hack" the login portal. 
+
+The next thing I thought was what I thought whenever coding injection came into my mind, which my brain answered: SQL
+*SQL uses specific words in all capitalized letters including SELECT, AND, OR *
 
