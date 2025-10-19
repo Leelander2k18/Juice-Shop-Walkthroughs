@@ -5,3 +5,25 @@ I'm looking at the challenge description and at the OWASP vulnerability category
 The next thing I thought was what I thought whenever coding injection came into my mind, which my brain answered: SQL
 *SQL uses specific words in all capitalized letters including SELECT, AND, OR *
 
+I went to the login screen and put a random symbol (') as the username and an easy number as the password ("0000") to observe what would happen in the debugger tool. 
+I went to the debugger tool and navigated to the Network section where I got the following message after hitting enter on the login submission:
+
+{
+  "message": "SQLITE_ERROR: unrecognized token: \"4a7d1ed414474e4033ac29ccb8653d9b\"",
+  "stack": "Error\n    at Database.<anonymous> (/app/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)\n    at /app/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50\n    at new Promise (<anonymous>)\n    at Query.run (/app/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)\n    at /app/node_modules/sequelize/lib/sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)",
+  "name": "SequelizeDatabaseError",
+  "parent": {
+    "errno": 1,
+    "code": "SQLITE_ERROR",
+    "sql": "SELECT * FROM Users WHERE email = ''' AND password = '4a7d1ed414474e4033ac29ccb8653d9b' AND deletedAt IS NULL"
+  },
+  "original": {
+    "errno": 1,
+    "code": "SQLITE_ERROR",
+    "sql": "SELECT * FROM Users WHERE email = ''' AND password = '4a7d1ed414474e4033ac29ccb8653d9b' AND deletedAt IS NULL"
+  },
+  "sql": "SELECT * FROM Users WHERE email = ''' AND password = '4a7d1ed414474e4033ac29ccb8653d9b' AND deletedAt IS NULL",
+  "parameters": {}
+}
+
+This result confirms that I will be conducting an SQL injection. 
