@@ -26,4 +26,6 @@ I went to the debugger tool and navigated to the Network section where I got the
   "parameters": {}
 }
 
-This result confirms that I will be conducting an SQL injection. 
+This result confirms that I will be conducting an SQL injection. Now let's get to doing the injection. :)
+
+
