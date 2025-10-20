@@ -1,0 +1,4 @@
+* Challenge Description: Exfiltrate the entire DB schema definition via SQL Injection *
+
+For this challenge, the BurpSuite tool will come in handy. 
+
