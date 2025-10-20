@@ -1,3 +1,5 @@
 * Challenge Description: Get rid of all 5-star customer feedback *
 
 For this challemge, I had to think...who would be able to remove comments (My mind obviously went straight to Reddit :p) Admin!
+
+Since I had already completed the Admin Section challenge, all I needed to do was navigate to the admin section of the application then delete the five star review that was there.
