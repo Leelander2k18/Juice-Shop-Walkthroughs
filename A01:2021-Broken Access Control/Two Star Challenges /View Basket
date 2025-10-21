@@ -3,5 +3,5 @@
 NOTE: Make sure the proxy is turned on for BurpSuite.
 
 1. The first thing I did was to make sure I was logged into my account in Juice Shop. 
-2. I then clicked on View Basket in the top right hand corner and then switched to the proxy tab in BurpSuite and located the page (/rest/basket/7). 
+2. I then clicked on View Basket in the top right-hand corner and then switched to the proxy tab in BurpSuite and located the page (/rest/basket/7). 
 3. I went back to the view basket page in juice shop and opened up the developer toolkit. 
