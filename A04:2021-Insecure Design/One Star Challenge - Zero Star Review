@@ -1,1 +1,7 @@
+* Challenge Description: Give a devastating zero-star feedback to the store * 
 
+Note: Make sure the BurpSuite proxy is turned on to intercept any requests
+
+1. The first thing I did was go to the drop down menu on the top left of the homepage and clicked on Customer Feedback. 
+2. I then make sure the proxy is up and running with my browser before clicking the submit button on the feedback (just out of curiousity). 
+3. Looking at the request on Burp, I can see that it says "rating: 1". All I have to do now is change that 1 to a 0 for ⭐️ ZERO STARS ⭐️. Hitting the forward button in Burp will complete the challenge. 
