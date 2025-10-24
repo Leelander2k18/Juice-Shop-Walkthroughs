@@ -6,4 +6,4 @@ NOTE: This challenge requires BurpSuite
 2. I navigated to the Customer Feedback page from the drop down menu on the shop's homepage. 
 3. I put in random letters in the username and password fields before submitting. Also, give a rating. I used my proxy to forward the request to Burp where I can now investigate this further. 
 4. I focused my attention on BurpSuite to look at the raw code of the request that came in, where I notice a "UserId: ". Now this is promising. 
-5. All I have to do now is change the name within the UserId field before submitting and we can now see that the feedback we sent is in a different username. 
+5. All I have to do now is change the name within the UserId field before forwarding the request and we can now see that the feedback we sent is in a different username. 
