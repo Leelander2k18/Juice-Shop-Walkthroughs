@@ -1,1 +1,8 @@
+* Challenge Description: Provoke an error that is neither very gracefully nor consistently handled * 
 
+The fun in this exercise will come from using the ffuf tool to find potential hidden directories that can cause an error message
+
+1. Fire up the ffuf tool (I'm using the Kali VM for this). The command we will use is: ffuf -u https://juice-shop.herokuapp.com/FUZZ
+2. I see there is the "/ftp" directory which catches my eye, I navigate to the directory where I am sent to a page containing different files
+3. I click on the first one I see called "coupons_2013.md.bak" where I am hit with an error message: "Only .md and .pdf files are allowed!" 
+WE DID THE CHALLENGE!
