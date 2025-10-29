@@ -1,1 +1,14 @@
+* Challenge Description: Register as a user with administrator privileges *
 
+
+You'll want to use BurpSuite and proxy for this challenge ;) 
+
+NOTE: Doing the Admin Section Challenge will be helpful for this challenge. 
+
+
+1. After setting up Burpsuite and enabling the proxy (I use FoxyProxy) I go to the new user registration form and filled it in as a random person.
+2. Fowarding this form, I see in BurpSuite the contents of the user authentication packet. 
+3. Looking back at the administrator login packet, I see the administrator is listed under the "role" field, which isn't included the new user authentication packet. 
+4. In BurpSuite, I add "role: administrator" to the Raw code in the Intercept tab and send it to repeater. 
+5. The response in repeater is a new administrator account with the new user information I had had entered earlier.
+6. There is no step here. WE DID IT!
