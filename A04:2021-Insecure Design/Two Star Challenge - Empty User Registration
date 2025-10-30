@@ -1,2 +1,10 @@
 * Challenge Description: Register a user with an empty email and password *
 
+Note: This is another challenge that uses BurpSuite and a proxy :) 
+
+
+1. I made sure my BurpSuite and Foxyproxy were enabled and ready for action.  
+2. Reading the Challenge description, I can guess that we'll need to do something with the User Registration form in order to complete the challenge. I go to the User Registration page and fill out the form (random values are fine). 
+3. I submit the form and forward the request using my proxy so I can view it in BurpSuite. 
+4. Looking at the response packet, I leave the quotations but delete my username and password phrases from their fields along with the repeat password value. 
+5. Upon forwarding the request, I was greeted with a congratulations message for successfully completing the challenge!
