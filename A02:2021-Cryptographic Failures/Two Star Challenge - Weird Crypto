@@ -1,1 +1,11 @@
 * Challenge Description: Inform the shop about an algorithm or library it should definitely not use the way it does *
+
+When I asked myself how I was going to approach this, I reread the challenge description and noticed I had to "inform the shop". So...I have to leave a message for the shop, which I found to be similar to submitting a ticket to a company's support center. However, in this case it's just to say "I thought you might want to know...". 
+Another aspect I thought of was that this is a CRYPTOGRAHPY failure. Hence, we're most likely dealing with weak encryption in the customer feedback form. The most common ineffective encryption function that first comes to mind is MD4/MD5. 
+
+
+1. I navigated to the customer feedback form below the Contact section on the web app's drop down menu. 
+
+2. In the form, I put a random name and then type in "MD5" in the comment box. I then answered the rest of the form as normal. 
+
+3. Upon submitting the form, I get a notification that I have successfully completed the challenge!
