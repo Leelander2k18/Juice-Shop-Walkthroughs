@@ -2,3 +2,17 @@
 
 For this challenge, the BurpSuite tool will come in handy. 
 
+
+1. I enabled the BurpSuite tool and Foxyproxy when first starting the challenge. 
+
+2. Seeing how this is an SQL challenge, I looked for any input field that I could exploit. I then wrote a random word (like "juice") in the search box before hitting enter to see what will happen.
+
+3. I forwarded the search request through my proxy into BurpSuite where I look for the endpoint related to the resulting product that came from the search.
+
+4. I click on the endpoint and start to experiment a bit once I sent it to the repeater tool, putting SQL values after the "search/q= " in the first line which then reveals some of the database schema. Giving us the SQLite error. 
+
+5. Next, I inputted "q=juice'))UNION%20SELECT%20sql,2,3,4,5,6,7,8,9%20FROM%20sqlite_master--". This is the SQL injection payload I will use to reveal the schema. 
+
+6. Sending the request, the response reveals the schema. 
+
+7. Going back to the juice shop application, I'm greeted with the notification that I had completed the challenge!
