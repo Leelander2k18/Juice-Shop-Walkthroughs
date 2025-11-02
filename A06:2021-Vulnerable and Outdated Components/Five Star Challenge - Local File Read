@@ -1,1 +1,14 @@
+* Challenge Description: Gain read access to an arbitrary local file on the web server *
 
+For this challenge, using the Kali Linux VM comes in handy. 
+
+
+1. Since we're trying to find any files in the application, I'm using the dirbuster tool. In my Kali terminal, I type "dirb https://juice-shop.herokuapp.com" to see what I can find.
+
+2. While it's scanning I go back to the web application and type in "/ftp" at the end of the URL to get access to the files and internal library for the web application. 
+
+3. Exploring the files, I notice that any time I try to open files that were not of ".pdf" or ".md", I would get an error message saying that only those two file types were allowed to be accessed.
+
+4. The goal for this challenge is to access a file that is not allowed. I decide to do a fuzzing test on the file name of a disallowed file to see if adding random characters to the URL will in a way "confuse" the security check into letting me gain access to the file. 
+
+5. I add characters such as % and numbers to the URL and refresh the page to find that it now allows me to view the contents of a file I had previously been denied access. 
