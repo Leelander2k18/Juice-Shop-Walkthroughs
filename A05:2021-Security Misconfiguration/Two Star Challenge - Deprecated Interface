@@ -6,4 +6,4 @@ NOTE: When uploading files for this challenge, only zip, xml, and pdf is allowed
 
 2. I go to the Juice Shop homepage and open the developer tool settings on my browser (I'm using chrome). I search for pdf in the main.js file and see that pdf, xml, and zip files are the only filetypes allowed to be uploaded to the web application.
 
-3. I fill out the form and upload a random existing pdf file from my computer and the challenge is complete! 
+3. I fill out the form and upload a random existing pdf file from my computer before submitting the form and the challenge is complete! 
