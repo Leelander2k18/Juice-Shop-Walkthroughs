@@ -1,1 +1,14 @@
+* Challenge Description: Stick cute cross-domain kittens all over our delivery boxes * 
 
+
+1. I first went to the Deluxe membership page found in the drop down menu on Juice Shop's home page.
+
+2. I right clicked on the Boxess image on the page and go to the "Inspect" tool. Upon clicking the tool, I'm directed to to the Elements tab where I can see the name of the image is "blankBoxes.png".
+
+3. I then go to the sources tab and search for "blankBoxes" within the source of the main.js file. I didn't see any noteworthy here so I go back to the Elements tab. 
+
+4. I hover my mouse over where it says, "<image _ngcontent-ng-c1083175221="" x="260" y="130" height="50" href="assets/public/images/JuiceShop_Logo.png"></image>". The goal is to replace the Juice Shop logo on the boxes with cute kittens, so we'll need to change this somehow. 
+
+5. I try to change the image through entering a query at the end of the URL(https://juice-shop.herokuapp.com/#/deluxe-membership?testDecal=remove), which gets rid of the juice shop logo on the boxes. You can see this in the Elements tab in "<image _ngcontent-ng-c1083175221="" x="230" y="330" height="70" href="assets/public/images/remove"></image>". 
+
+6. 
