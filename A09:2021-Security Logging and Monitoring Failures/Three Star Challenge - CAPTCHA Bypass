@@ -1,0 +1,9 @@
+* Challenge Description: Submit 10 or more customer feedbacks within 10 seconds. *
+
+NOTE: Having BurpSuite and a proxy open would be helpful for this challenge. 
+
+1. I made sure my proxy and burp were setup before I navigated to and filled in the customer feedback form under the Juice Shop's drop down menu.
+
+2. I go to BurpSuite and navigate to the HTTP history under the proxy tab and locate my customer feedback submission (/api/Feedbacks). I send this onto the repeater tool. 
+
+3. All I do now is hit send in the repeater tab super fast 10 times and the challenge is complete!
