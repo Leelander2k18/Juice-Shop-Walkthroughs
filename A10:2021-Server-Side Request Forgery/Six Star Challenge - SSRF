@@ -1,4 +1,20 @@
 *Challenge Description: Request a hidden resource on server through server. *
 
-NOTE: BurpSuite and a proxy will be needed for this challenge. 
+NOTE: BurpSuite, a proxy, and a Kali Linux VM will be needed for this challenge. 
 
+
+1. To start this challenge I make sure my BurpSuite and proxy are ready. You can test to see if a website is susceptible to SSRF attacks by going to (https://www.postb.in/) and following the instructions listed on its site.
+
+2. I go back to the Juice Shop application and click on my user profile to upload a photo. I download a random jpeg image from online then copy and pasting the image's URL, along with the port number I want the request sent to (in this case port 80), on my user profile where it says "Link Image". After submitting, I go to the proxy tab in Burp to look at the request and send to the repeater tool.
+
+3. I want this request to be scanned on all port numbers so I send the request to the Intruder tool where I will clear the existing payload positions then add payload numbers around port 80. Configuring the settings, I set payload set: 1, payload type: simple list, payload options: (entered in a few different large port numbers). I start the attack once I configured the settings to my liking. 
+
+4. No unique results show on burp from the attack but going back to the user profile page on Juice Shop, I see that i'm now unable to see the image displayed on the application. 
+
+5. Next, I go into my kali terminal and type in curl with the image url where I see the html contents of the page. 
+
+6. I repeat the same command but also add "> /tmp/a.html" to create a temporary file containing the image url's html source code. 
+
+7. I then type the browser name (chrome) and the tmp file command: "chrome /tmp/a.html" where I'm sent to a directory containing a flag.txt file. 
+
+8. Going back to the intruder tab in Burp, 
