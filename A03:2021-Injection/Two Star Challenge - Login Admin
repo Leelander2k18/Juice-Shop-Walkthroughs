@@ -28,5 +28,5 @@ I went to the debugger tool and navigated to the Network section where I got the
 
 This result confirms that I will be conducting an SQL injection. Now let's get to doing the injection. :)
 
-For the login, I entered  ' OR TRUE -- as the username and any string, which in this case I put "hello", as the password. amd BOOM we were logged in as the admin. 
+For the login, I entered  ' OR TRUE -- as the username and any string, which in this case I put "hello", as the password. BOOM we were logged in as the admin. 
 
