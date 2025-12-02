@@ -9,6 +9,6 @@ NOTE: BurpSuite and a proxy will be handy for this challenge. :)
 
 3. I access the administrator account and look at at customer feedback where I find this message:"Please send me the juicy chatbot NFT in my wallet at /juicy-nft : "purpose betray marriage blame crunch monitor spin slide donate sport lift clutch" (***ereum@juice-sh.op)"
 
-4. I copy and paste the string into a mneumonic converter which gives me te private key: 0x5bcc3e9d38baa06e7bfaab80ae5957bbe8ef059e640311d7d6d465e6bc948e3e
+4. I copy and paste the string into a mneumonic converter which gives me the private key: 0x5bcc3e9d38baa06e7bfaab80ae5957bbe8ef059e640311d7d6d465e6bc948e3e
 
 5. I copy and paste the private key into the NFT wwallet verification page where I am greeted with the message saying I have completed the challenge!
