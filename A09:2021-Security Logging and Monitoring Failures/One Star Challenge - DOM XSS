@@ -1,1 +1,5 @@
+1. To do this challenge, I look for input field that may be vulnerable to an XSS attack. I input a payload (<iframe src="javascript:alert(xss)">) into the application's search field. via the "search q= ".
 
+2. The URL inserts random characters into the parameter the first time I refresh the page and adds the "search q= " before the payload. 
+
+3. I refresh the page again with the encoded URL and this time I get an XSS alert box on the screen. I have completed the challenge. 
