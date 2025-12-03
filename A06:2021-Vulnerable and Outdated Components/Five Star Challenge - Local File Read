@@ -4,5 +4,7 @@
 
 3. Exploring the files, I click on the acquisitions.md file and see the contents. However, for this challenge, I need to go deeper.
 
-5. The goal for this challenge is to go beyond the /ftp directory and access an operating system file. Therefore, I need to perform a directory traversal.  I type in the URL (/ftp/../../../etc/passwd) to try and get access to internal juice shop configuration information. I look at the request in the Burp Suite proxy and can see the juice shop configuration information in the packet response. 
+5. The goal for this challenge is to go beyond the /ftp directory and access an operating system file. Therefore, I need to perform a directory traversal.  I type in the URL (/ftp/../../../etc/passwd) to try and get access to internal juice shop configuration information. I look at the request in the Burp Suite proxy and can see the juice shop configuration information in the packet response.
+
+
 CHALLENGE COMPLETE!!
