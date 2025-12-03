@@ -6,4 +6,4 @@ NOTE: Having BurpSuite and a proxy open would be helpful for this challenge.
 
 2. I go to BurpSuite and navigate to the HTTP history under the proxy tab and locate my customer feedback submission (/api/Feedbacks). I send this onto the repeater tool. 
 
-3. All I do now is hit send in the repeater tab super fast 10 times and the challenge is complete!
+3. All I do now is hit send in the repeater tab super fast 10 times and the challenge is complete! Going back to the web application I get the completion notification.
