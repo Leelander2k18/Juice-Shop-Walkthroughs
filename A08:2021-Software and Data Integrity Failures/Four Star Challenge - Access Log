@@ -3,22 +3,8 @@
 NOTE: Kali VM will be useful for this challenge. 
 
 
-1. I fire up my Kali VM 
+1. After booting up my Kali Linux VM, I use the ffuf tool to perform a fuzzing test on the Juice Shop application to identify any hidden endpoints. 
 
-2. I then went to the login portal and clicked on the "Forgot your Password" mechanism. 
+2. To help filter out the responses from the fuzzing test, I type in -fs 2000 (random high value for content size) at the end of my previous command. This shows a few interesting endpoints: /assets, /legal. 
 
-3. After submitting the request, I filled out the "Forgot Password" form where I entered Jim's email. For the security question, it actually shows which one he used which in this case is "Your eldest sibling's name?". I inputted random values in the rest of the form and got the error message, "Wrong answer to security question" (Unsurprisingly). 
-
-4. Going to my proxy in Burp, I located my POST request (/rest/user/reset-password). Based on previous classwork, I can already see that I'll have to brute-force my way into finding the Security Question answer. I send the POST request to the intruder tool.
-
-5. Going to the intruder tool, I go to the right side of the page and click on "Clear (Payload Symbol)". I then add a payload symbol to the beginning and end of the "answer" field text. This allows us to brute-force just the answer field. 
-
-6. For the list of names, I do a google search and find a webpage titled "Top Names Over the Last 100 Years" on the Social Security Administration site. This looks pretty official.
-
-7. Because I'm lazy, I decided to have ChatGPT spit out only the names on the list as opposed to all of the numerical data we don't need. I then copied and pasted the names from ChatGPT into the Payload Simple List section. 
-
-8. Going to the options tab in the intruder tool, I go down to the "Grep - Extract" section. This section allows you to ask Burp to extract any useful information from the attack responses as it's being conducted. This saves people SO much time in finding what they're looking for instead of having to search through every attack response. For this section, I highlighted the phrase "Wrong answer to the security question" to be extracted from each attack response. 
-
-9. Starting the attack, I slowly watched the response of each name being tested where I then noticed that the name "Samuel" elicited a unique response. 
-
-10. Curious, I immediately get hit with the notifcation that I had solved the challenge. WOOHOO!!
+3. I try more fuzzing tests with each of the endpoints where I get a hit from /legal/private. I click on the file in the hidden page, and the challenge is now complete.
