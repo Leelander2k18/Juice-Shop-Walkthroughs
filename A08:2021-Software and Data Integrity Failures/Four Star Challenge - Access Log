@@ -1,9 +1,9 @@
 * Challenge Description: Gain access to any access log file of the server * 
 
-NOTE: BurpSuite and a proxy will be handy for this challenge. :) 
+NOTE: Kali VM will be useful for this challenge. 
 
 
-1. After setting up my BurpSuite and proxy, I first went to the products page and go through each product's reviews in order to find Jim's email (Jim@juice-sh.op).
+1. I fire up my Kali VM 
 
 2. I then went to the login portal and clicked on the "Forgot your Password" mechanism. 
 
